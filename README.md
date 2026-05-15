@@ -18,14 +18,19 @@
     - Functions
     - Exception Handling
     - File Handling
+    - Type Casting
+    - Recursion
 - Object Oriented Programming
+    - Classes
+    - init
+    - Variables and Function
+    - Objects
 - Data Structures
     - List
     - Sets
     - Tuples
     - Dictionary
-- Algorithms
-    - Linear Search
-    - Binary Search
+    - DefaultDict
 - Libraries and Modules
     - Random
+    - Datetime
