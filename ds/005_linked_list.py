@@ -1,5 +1,7 @@
 """
 Linked List implementation in python
+Changelog:
+- [26-June-2026]: Added 'delete_node' function to allow removal of nodes by value.
 """
 
 class node():
@@ -22,6 +24,33 @@ class linkedlist():
             curr.next = node(data)
         else:
             self.head = node(data)
+            
+    def delete_node(self, key):
+        curr = self.head
+        
+        # Case 1: List is already empty
+        if curr is None:
+            print("Linked list is empty")
+            return
+        
+        # Case 2: head itself is the requested node to deleted
+        if curr.data == key:
+            self.head = curr.next
+            curr = None
+            return
+        
+        # Case 3: search for key to delete
+        previous = None
+        while curr is not None and curr.data != key:
+            previous = curr
+            curr = curr.next
+        
+        if curr is None:
+            print(f"{key} not found in this linked list")
+            return
+        
+        previous.next = curr.next
+        curr = None
 
     def print_list(self):
         curr = self.head
@@ -40,3 +69,8 @@ linkedlist_obj.add_node(8)
 linkedlist_obj.add_node(9)
 
 linkedlist_obj.print_list()
+linkedlist_obj.delete_node(8)
+print("After deletion:-")
+linkedlist_obj.print_list()
+# Try to delete unexisted value
+linkedlist_obj.delete_node(4)
