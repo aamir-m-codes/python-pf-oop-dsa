@@ -30,8 +30,5 @@
     - Tuples
     - Dictionary
     - DefaultDict
-    - Binary Search Tree (BST)
+    - Binary Search Tree
     - Singly Linked List
-- Libraries and Modules
-    - Random
-    - Datetime

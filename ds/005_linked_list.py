@@ -28,18 +28,15 @@ class linkedlist():
     def delete_node(self, key):
         curr = self.head
         
-        # Case 1: List is already empty
         if curr is None:
             print("Linked list is empty")
             return
         
-        # Case 2: head itself is the requested node to deleted
         if curr.data == key:
             self.head = curr.next
             curr = None
             return
         
-        # Case 3: search for key to delete
         previous = None
         while curr is not None and curr.data != key:
             previous = curr
@@ -70,7 +67,5 @@ linkedlist_obj.add_node(9)
 
 linkedlist_obj.print_list()
 linkedlist_obj.delete_node(8)
-print("After deletion:-")
 linkedlist_obj.print_list()
-# Try to delete unexisted value
 linkedlist_obj.delete_node(4)
