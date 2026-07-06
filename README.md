@@ -1,4 +1,3 @@
-*under construction*
 *for educational purpose only*
 
 - Programming Fundamentals
@@ -31,6 +30,3 @@
     - Tuples
     - Dictionary
     - DefaultDict
-- Libraries and Modules
-    - Random
-    - Datetime
