@@ -1,4 +1,3 @@
-*under construction*
 *for educational purpose only*
 
 - Programming Fundamentals
